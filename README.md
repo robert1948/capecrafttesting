@@ -1,6 +1,6 @@
-# Vission and Mission
+# Vission and Mission V3
 
-"Project Muse aims to revolutionise enterprise business management by delivering an intuitive and powerful SaaS system, leveraging the potential of IoT. Our vision is to equip businesses with real-time insights and control over their processes, enabling them to optimise their operations, maximise profitability, and drive sustainable growth. Muse will set new standards in business management solutions, embodying adaptability, scalability, and security while ensuring user-friendly experiences for all stakeholders.
+"Cape Craft Projects is dedicated to transforming enterprise business management through our innovative SaaS system, infused with the power of IoT. Our mission is to empower businesses with immediate, actionable insights and comprehensive control over their operations. By doing so, we aim to help companies optimize their workflows, boost profitability, and foster sustainable expansion. At Cape Craft, we're redefining the benchmarks for business management solutions by focusing on adaptability, scalability, and robust security, all within a user-centric interface designed for stakeholders at every level."
 
 ## Mission
 
