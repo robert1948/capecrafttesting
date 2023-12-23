@@ -1,3 +1,0 @@
-function speakPuppy() {
-    alert("Woof!");
-}
