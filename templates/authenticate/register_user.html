@@ -1,7 +1,4 @@
-{% extends 'base.html' %} 
-
-{% block content %} 
-{% include 'navbar.html' %} 
+{% extends 'website\base.html' %} {% block content %} {% include 'website\navbar.html' %}
 
 {% if form.errors %}
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -21,11 +18,10 @@
         <input type="submit" value="Register" class="btn btn-primary" />
       </div>
     </div>
-    {% include 'newsletter.html' %} 
 
     <!--Boxes-->
 
   </form>
 </div>
-
+{% include 'website\boxthree.html' %} {% include 'website\profile.html'%} {% include 'website\newsletter.html' %} 
 {% endblock %}

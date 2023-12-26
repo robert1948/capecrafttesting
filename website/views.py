@@ -5,4 +5,4 @@ def home(request):
 
 
 def vision(request):
-    return render(request, 'vision.html', {})
+    return render(request, 'website/vision.html', {})
