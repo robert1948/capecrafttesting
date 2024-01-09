@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: lightblue;
   }
@@ -11,3 +12,18 @@ body {
     font-family: verdana;
     font-size: 20px;
   }
+=======
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+>>>>>>> 0c85a4dea3b923d0c666b91c85e5c05a8c2410fb

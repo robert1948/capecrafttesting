@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #scrollUp {
   bottom: 50px;
   font-size: 22px;
@@ -16,3 +17,23 @@
     background-color: $dark;
   }
 }
+=======
+#scrollUp {
+  bottom: 50px;
+  font-size: 22px;
+  line-height: 42px;
+  right: 0;
+  width: 40px;
+  background-color: $primary;
+  color: $white;
+  text-align: center;
+  height: 40px;
+  @include transition-duration(500ms);
+  border-radius: 2px 0 0 2px;
+
+  &:focus,
+  &:hover {
+    background-color: $dark;
+  }
+}
+>>>>>>> 0c85a4dea3b923d0c666b91c85e5c05a8c2410fb
