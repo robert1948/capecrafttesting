@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(215, 222, 223, 0.923);
+    background-color: lightblue;
   }
   
   h1 {
@@ -8,10 +8,6 @@ body {
   }
   
   p {
-    font-family: verdana;
-    font-size: 20px;
-  }
-  ul {
     font-family: verdana;
     font-size: 20px;
   }

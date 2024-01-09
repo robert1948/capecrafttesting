@@ -1,6 +1,5 @@
 from django.contrib import admin
 from django.urls import path, include
-from django.views.generic.base import TemplateView # new
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -8,6 +7,6 @@ urlpatterns = [
     path("members/", include("members.urls")),
     path("members/", include("django.contrib.auth.urls")),
     path("blog/", include("blog.urls")), # new
-    path("address_book/", include("address_book.urls")) # new
-    
+    path("address_book/", include("address_book.urls")),
+    path('authenticate/', include('authenticate.urls')), # fix
 ]

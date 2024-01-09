@@ -1,4 +1,4 @@
-from django.urls import path, include # Add include to the import statement
+from django.urls import path # Add include to the import statement
 from . import views # Add this line
 
 urlpatterns = [

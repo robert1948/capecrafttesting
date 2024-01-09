@@ -3,10 +3,13 @@ body {
   }
   
   h1 {
-    color: white;
+    color: #f1eded;
     text-align: center;
   }
-  
+  h2 {
+    text-align: center;
+  }
+
   p {
     font-family: verdana;
     font-size: 20px;
@@ -14,4 +17,9 @@ body {
   ul {
     font-family: verdana;
     font-size: 20px;
+  }
+  .myhead {
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
   }

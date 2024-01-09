@@ -1,0 +1,21 @@
+.red_bg {
+    background-color: #a9a3a2f1 !important;
+}
+/* For each class, set some colors */
+.one {
+    background-color: cornflowerblue;
+  }
+  .two {
+    color: black;
+    background-color: aquamarine;
+  }
+  .three {
+    background-color: cornflowerblue;
+  }
+  .four {
+    background-color: cornflowerblue;
+  }
+  .five {
+    background-color: cornflowerblue;
+  }
+  

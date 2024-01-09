@@ -4,7 +4,7 @@ logger = logging.getLogger(__name__)
 
 def home(request):
     logger.debug("home called")
-    return render(request, 'home.html', {})
+    return render(request, 'website/home.html', {})
 
 def vision(request):
     logger.debug("vision called")

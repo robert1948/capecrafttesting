@@ -7,7 +7,7 @@ from .forms import RegisterUserForm
 
 
 def login_user(request):
-    return render(request,'registration/login.html',{})
+    return render(request,'authenticate/login.html',{})
 
 
 
