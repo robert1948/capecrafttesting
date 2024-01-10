@@ -1,39 +1,46 @@
+{% load static %}
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{% url 'home' %}">CAPE CRAFT PROJECTS</a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        {% if user.is_authenticated %}
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-                            </li>
-                        {% else %}
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'login'%}">Login</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{% url 'register' %}">Register</a>
-                                </li>
-                        {% endif %}
-                </ul>
-        </div>
-        <div>
+    <a class="navbar-brand" href="{% url 'home' %}">CAPE CRAFT PROJECTS</a>
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'note'%}">Note</a>
+                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login'%}">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'vision'%}">Vision</a>
+                    <a class="nav-link" href="{% url 'register' %}">Register</a>
                 </li>
-        </div>
+            {% endif %}
+        </ul>
+    </div>
 </nav>
+        <br/>
+        <div class="container">
+            {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                    <button class="close" data-dismiss="alert">
+                    </button>
+                    {{message}}
+                </div>
+
+                {% endfor %}
+            {% endif %}
+        </div>
