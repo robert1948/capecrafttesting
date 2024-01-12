@@ -1,20 +1,22 @@
 {% extends 'website/base.html'%} {% block content %} {% include 'website/navbar.html'%}
-<h2> Register </h2>
 
+<h2 class="text-center"> Register </h2>
 
-<form method="POST" action="{% url 'register' %}"> 
-  {% csrf_token %} 
-    
-    {% if form.errors %}
-      <p> Your form has errors, please correct them. </p>
-    {% endif %}
+<div class="col-md-6 offset-md-3">
 
-    {{ form.as_p}}
+  <form method="POST" action="{% url 'register' %}"> 
+    {% csrf_token %} 
+      
+      {% if form.errors %}
+        <p> Your form has errors, please correct them. </p>
+      {% endif %}
 
-<input type="submit" value="Register" class="btn btn-secondary"> 
+      {{ form.as_p}}
 
-</form>
+  <input type="submit" value="Register" class="btn btn-secondary"> 
 
+  </form>
 
+</div>
 {% endblock %}
 ```
