@@ -2,10 +2,11 @@
 {% block content %}
 {% include 'website/navbar.html' %}
 
-<h2 class="text-center"> Register </h2>
+<h2 class="text-center"> User Profile </h2>
 
 <div class="col-md-6 offset-md-3">
-  <form method="POST" action="{% url 'register' %}">
+
+  <form method="POST" action="{% url 'edit_profile' %}">
     {% csrf_token %}
 
     {% if form.errors %}
@@ -20,8 +21,10 @@
     {% endif %}
 
     {{ form.as_p }}
+    <input type="submit" value="Edit profile" class="btn btn-secondary">
+  </br>
+  <p> <small><a href="{% url 'change_password' %}">Click Here - Change password</small> </a> </p>
 
-    <input type="submit" value="Register" class="btn btn-secondary">
   </form>
 </div>
 {% endblock %}

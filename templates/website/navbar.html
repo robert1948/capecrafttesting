@@ -20,6 +20,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'logout' %}">Logout</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'edit_profile' %}">Edit Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'change_password' %}">Change Password</a>
+                </li>
+
             {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'login'%}">Login</a>
@@ -27,20 +34,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'register' %}">Register</a>
                 </li>
+
             {% endif %}
         </ul>
     </div>
 </nav>
         <br/>
-        <div class="container">
-            {% if messages %}
-                {% for message in messages %}
-                <div class="alert alert-warning alert-dismissible" role="alert">
-                    <button class="close" data-dismiss="alert">
-                    </button>
-                    {{message}}
-                </div>
-
-                {% endfor %}
-            {% endif %}
-        </div>
+        <br/>

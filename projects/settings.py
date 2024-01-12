@@ -42,12 +42,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'projects', # new
+    'projects',  # new
     'website',
     'members',
-    'blog', 
+    'blog',
     'address_book',
-    'authenticate',# new
+    'authenticate',  # new
 ]
 
 MIDDLEWARE = [
@@ -58,7 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', # new
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # new
 ]
 
 ROOT_URLCONF = 'projects.urls'

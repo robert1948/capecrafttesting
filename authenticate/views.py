@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login, logout, update_session_auth_hash
 from django.contrib import messages
-from django.contrib.auth.forms import UserCreationForm
-from .forms import SignUpForm
+from django.contrib.auth.forms import UserChangeForm, PasswordChangeForm
+from .forms import EditProfileForm, SignUpForm
 
 def home(request):
     return render(request, 'website/home.html', {})
@@ -46,6 +46,35 @@ def register_user(request):
 
     context = {'form': form}
     return render(request, 'authenticate/register.html', context)
+
+def edit_profile(request):
+    if request.method == "POST":
+        form = EditProfileForm(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'You have edited your profile successfully')
+            return redirect('home')
+    else:
+        form = EditProfileForm(instance=request.user)
+
+    context = {'form': form}
+    return render(request, 'authenticate/edit_profile.html', context)
+
+def change_password(request):
+    if request.method == "POST":
+        form = PasswordChangeForm(data=request.POST, user=request.user)
+        if form.is_valid():
+            form.save()
+            update_session_auth_hash(request, form.user)
+            messages.success(request, 'You have changed your password successfully')
+            return redirect('home')
+    else:
+        form = PasswordChangeForm(user=request.user)
+
+    context = {'form': form}
+    return render(request, 'authenticate/change_password.html', context)
+
+    
 
 def note(request):
     return render(request, 'website/note.html', {})
