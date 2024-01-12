@@ -4,14 +4,23 @@
 
 <div class="col-md-6 offset-md-3">
 
+
   <form method="POST" action="{% url 'register' %}"> 
     {% csrf_token %} 
-      
-      {% if form.errors %}
-        <p> Your form has errors, please correct them. </p>
-      {% endif %}
+    
+    {% if form.errors %}
+    <div class="alert alert-warning alert-dismisable" role="alert"> 
+      <button class="close" data-dismiss="alert">x</button>
+      {% for field in form %} 
+        {% if field.errors %} 
+          {{ field.errors }}
+        {% endif %} 
+      {% endfor %}
+    </div>
 
-      {{ form.as_p}}
+    {% endif %}
+
+    {{ form.as_p}}
 
   <input type="submit" value="Register" class="btn btn-secondary"> 
 
@@ -19,4 +28,3 @@
 
 </div>
 {% endblock %}
-```
