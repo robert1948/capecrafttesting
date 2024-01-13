@@ -1,0 +1,20 @@
+heroku run python manage.py makemigrations --app=capecrafttesting
+heroku run python manage.py migrate --app=capecrafttesting
+heroku run python manage.py createsuperuser --app=capecrafttesting  Username  'u31801'
+zeonita,brutus  - Stinkie@1948 
+
+heroku addons:create heroku-postgresql:hobby-dev -a capecrafttesting
+Host
+ec2-44-206-204-65.compute-1.amazonaws.com
+Database
+dbg96cd3lcdhjp
+User
+gpujgxtmzhlpfi
+Port
+5432
+Password
+c610368f261e4cdd162a2a44dc2ed291508dc5a07c7204bcef2162f88768cbcd
+URI
+postgres://gpujgxtmzhlpfi:c610368f261e4cdd162a2a44dc2ed291508dc5a07c7204bcef2162f88768cbcd@ec2-44-206-204-65.compute-1.amazonaws.com:5432/dbg96cd3lcdhjp
+Heroku CLI
+heroku pg:psql postgresql-trapezoidal-96269 --app capecrafttesting
