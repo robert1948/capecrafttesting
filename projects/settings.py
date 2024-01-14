@@ -17,7 +17,7 @@ import dj_database_url
 from decouple import config
 
 # Add missing import for whitenoise
-#import whitenoise.middleware
+import whitenoise.middleware
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -96,7 +96,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',  # Update the engine to 'django.db.backends.postgresql'
         'NAME': 'dbg96cd3lcdhjp',
         'USER': 'gpujgxtmzhlpfi',
-        'PASSWORD': 'c610368f261e4cdd162a2a44dc2ed291508dc5a07c7204bcef2162f88768cbcd',
+        'PASSWORD': 'ffdbcd9f198be68cc9830705d8871ae20f19290b2a64c8524f8ea4b9161292c4',
         'HOST': 'ec2-44-206-204-65.compute-1.amazonaws.com',
         'PORT': '5432',
     }
@@ -107,8 +107,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',  # Update the engine to 'django.db.backends.postgresql'
     }
     } # new
+    
 
-#DATABASES['default'] = dj_database_url.config(default='postgres://gpujgxtmzhlpfi:c610368f261e4cdd162a2a44dc2ed291508dc5a07c7204bcef2162f88768cbcd@ec2-44-206-204-65.compute-1.amazonaws.com:5432/dbg96cd3lcdhjp')  # new
 DATABASES['default'] = dj_database_url.config(default='postgres://cvnznxudizozdc:ffdbcd9f198be68cc9830705d8871ae20f19290b2a64c8524f8ea4b9161292c4@ec2-52-0-79-72.compute-1.amazonaws.com:5432/d17781bhl0b8oo')  # new
 
 

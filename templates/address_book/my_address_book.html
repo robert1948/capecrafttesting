@@ -1,5 +1,3 @@
-{% extends 'website/base.html' %}
-
 {% block content %}
 <div> <!-- Correctly opened <div> tag -->
     <h2>Addresses</h2>
@@ -9,3 +7,6 @@
     {% endfor %}
 </div> <!-- Correctly closed <div> tag -->
 {% endblock %}
+
+
+<p>Number of addresses: {{ number_of_records }}</p>

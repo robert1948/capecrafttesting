@@ -8,3 +8,6 @@ def vision(request):
 
 def note(request):
     return render(request, 'website/note.html', {}),
+
+def all_addresses(request):
+    return render(request, 'website/all_addresses.html', {all_addresses: all_addresses})
