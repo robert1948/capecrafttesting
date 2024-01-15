@@ -8,5 +8,5 @@ urlpatterns = [
     path("members/", include("django.contrib.auth.urls")),
     path("blog/", include("blog.urls")), # new
     path("address_book/", include("address_book.urls")),
-    path('authenticate/', include('authenticate.urls')), # fix
+    path('authenticate/', include('authenticate.urls')), 
 ]

@@ -1,0 +1,17 @@
+<!-- In your address_list.html file -->
+{% extends 'website/base.html' %}
+
+{% block content %}
+    <h2>Address List</h2>
+    {% for address in addresses %}
+        <div>
+            <h3>{{ address.name }}</h3>
+            <p>{{ address.address }}</p>
+            <p>{{ address.city }}, {{ address.state }} {{ address.zipcode }}</p>
+            <p>Phone: {{ address.phone }}</p>
+            <p>Email: {{ address.email }}</p>
+        </div>
+    {% empty %}
+        <p>No addresses found.</p>
+    {% endfor %}
+{% endblock %}
