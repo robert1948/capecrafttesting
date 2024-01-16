@@ -1,2 +1,2 @@
-web: gunicorn projects.wsgi --log-file - --log-level debug
+web: gunicorn projects.wsgi:application --bind
 
