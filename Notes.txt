@@ -1,0 +1,32 @@
+sudo apt-get update
+python --version
+pip --version
+python -m venv virt
+source virt/Scripts/activate
+pip freeze
+pip install mysql
+pip install django
+pip freeze > requirements.txt
+pip freeze
+django-admin startproject myclub_website
+cd myclub_website
+mypy events/models.py
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+python manage.py startapp events 
+python manage.py startapp members
+python manage.py startapp myblog
+python manage.py startapp payments
+python manage.py startapp subscriptions
+python manage.py startapp blogs
+python manage.py collectstatic
+
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+
+
+
+
