@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
-import dj_database_url
 from decouple import config
 
 # Add missing import for whitenoise
@@ -89,29 +87,15 @@ WSGI_APPLICATION = 'projects.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# Database
+# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-"""
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # Update the engine to 'django.db.backends.postgresql'
-        'NAME': 'dbg96cd3lcdhjp',
-        'USER': 'gpujgxtmzhlpfi',
-        'PASSWORD': 'ffdbcd9f198be68cc9830705d8871ae20f19290b2a64c8524f8ea4b9161292c4',
-        'HOST': 'ec2-44-206-204-65.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',  # Update the engine to 'django.db.backends.postgresql'
-    }
-    } # new
-    
-
-DATABASES['default'] = dj_database_url.config(default='postgres://cvnznxudizozdc:ffdbcd9f198be68cc9830705d8871ae20f19290b2a64c8524f8ea4b9161292c4@ec2-52-0-79-72.compute-1.amazonaws.com:5432/d17781bhl0b8oo')  # new
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -160,4 +144,3 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-django_heroku.settings(locals())
