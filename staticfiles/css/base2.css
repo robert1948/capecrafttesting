@@ -1,0 +1,44 @@
+<<<<<<< HEAD
+.red_bg {
+    background-color: #a9a3a2f1 !important;
+}
+/* For each class, set some colors */
+.one {
+    background-color: cornflowerblue;
+  }
+  .two {
+    color: black;
+    background-color: aquamarine;
+  }
+  .three {
+    background-color: cornflowerblue;
+  }
+  .four {
+    background-color: cornflowerblue;
+  }
+  .five {
+    background-color: cornflowerblue;
+  }
+=======
+.red_bg {
+    background-color: #a9a3a2f1 !important;
+}
+/* For each class, set some colors */
+.one {
+    background-color: cornflowerblue;
+  }
+  .two {
+    color: black;
+    background-color: aquamarine;
+  }
+  .three {
+    background-color: cornflowerblue;
+  }
+  .four {
+    background-color: cornflowerblue;
+  }
+  .five {
+    background-color: cornflowerblue;
+  }
+>>>>>>> 0c85a4dea3b923d0c666b91c85e5c05a8c2410fb
+  
