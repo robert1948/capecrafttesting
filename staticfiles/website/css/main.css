@@ -1,25 +1,29 @@
+<<<<<<< HEAD
 body {
-    background-color: rgba(215, 222, 223, 0.923);
+    background-color: lightblue;
   }
   
   h1 {
-    color: #f1eded;
+    color: white;
     text-align: center;
   }
-  h2 {
-    text-align: center;
-  }
-
+  
   p {
     font-family: verdana;
     font-size: 20px;
   }
-  ul {
+=======
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
     font-family: verdana;
     font-size: 20px;
   }
-  .myhead {
-  border: 2px solid black;
-  margin: 20px;
-  padding: 20px;
-  }
+>>>>>>> 0c85a4dea3b923d0c666b91c85e5c05a8c2410fb
